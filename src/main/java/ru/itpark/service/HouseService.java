@@ -21,8 +21,8 @@ public class HouseService {
         return results;
     }
 
-    public ArrayList<House> searchByPrice(int min, int max) {
-        ArrayList<House> results = new ArrayList<>();
+    public List<House> searchByPrice(int min, int max) {
+        List<House> results = new ArrayList<>();
         for (House house : houses) {
             if (house.getPrice() >= min  && house.getPrice() <= max ) {
                 results.add(house);

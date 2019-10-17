@@ -58,12 +58,12 @@ public class House {
     @Override
     public String toString() {
         String newLine = "\n\r";
-        return "House{" + newLine +
-                district + " district" + newLine +
+        String result;
+        result =district + " district" + newLine +
                 typeOfProperty + newLine +
                 price + " rubles" + newLine +
                 numberOfRoom + newLine +
-                typeOfHouse + newLine +
-                '}';
+                typeOfHouse + newLine;
+        return result;
     }
 }
