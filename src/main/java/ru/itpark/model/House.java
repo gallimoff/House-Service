@@ -1,18 +1,28 @@
 package ru.itpark.model;
 
 public class House {
+    private int id;
     private String district;
     private TypeOfProperty typeOfProperty;
     private int price;
     private NumberOfRoom numberOfRoom;
     private TypeOfHouse typeOfHouse;
 
-    public House(String district, TypeOfProperty typeOfProperty, int price, NumberOfRoom numberOfRoom, TypeOfHouse typeOfHouse) {
+    public House(int id, String district, TypeOfProperty typeOfProperty, int price, NumberOfRoom numberOfRoom, TypeOfHouse typeOfHouse) {
+        this.id = id;
         this.district = district;
         this.typeOfProperty = typeOfProperty;
         this.price = price;
         this.numberOfRoom = numberOfRoom;
         this.typeOfHouse = typeOfHouse;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getDistrict() {
@@ -43,8 +53,8 @@ public class House {
         return numberOfRoom;
     }
 
-    public void setNumberOfRooms(NumberOfRoom numberOfRooms) {
-        this.numberOfRoom = numberOfRooms;
+    public void setNumberOfRoom(NumberOfRoom numberOfRoom) {
+        this.numberOfRoom = numberOfRoom;
     }
 
     public TypeOfHouse getTypeOfHouse() {
